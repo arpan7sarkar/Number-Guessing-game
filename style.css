@@ -1,0 +1,211 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #000000, #1e0029);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 25%);
+    pointer-events: none;
+}
+
+h1 {
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.game-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.8),
+        0 0 20px rgba(0, 255, 255, 0.4),
+        0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.game-description {
+    color: #00ffff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.game-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.2),
+        inset 0 0 20px rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    border-color: #222;
+    background: rgba(0, 0, 0, 0.6);
+    color: #00ffff;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.2);
+}
+
+.input-wrapper button {
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-wrapper button:hover {
+    background: rgba(0, 255, 255, 0.1);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.5),
+        0 0 40px rgba(0, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.input-wrapper button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.message-box {
+    min-height: 60px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.message-box.success {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: #00cccc;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.message-box.error {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff4444;
+    border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+.game-info {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.attempts-display {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00ffff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.reset-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    color: #ff00ff;
+    border: 1px solid #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+    background: rgba(255, 0, 255, 0.1);
+    box-shadow: 
+        0 0 20px rgba(255, 0, 255, 0.5),
+        0 0 40px rgba(255, 0, 255, 0.3);
+    color: #00e5e5;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .game-container {
+        padding: 1rem;
+    }
+    
+    .input-wrapper {
+        flex-direction: column;
+    }
+    
+    .input-wrapper button {
+        width: 100%;
+    }
+    
+    .game-header h1 {
+        font-size: 2rem;
+    }
+}
