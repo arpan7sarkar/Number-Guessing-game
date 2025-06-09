@@ -1,35 +1,56 @@
 # Number Guessing Game
 
-A simple web-based game where players try to guess a number between 1 and 100 within 10 attempts.
+A visually appealing and interactive web-based game where players try to guess a randomly generated number between 1 and 100 within 10 attempts. The game provides real-time feedback and a playful UI for an engaging experience.
 
-## Features
+## 🎮 Features
 
 - Random number generation between 1-100
-- 10 attempts limit
-- Feedback on each guess (higher/lower)
-- Win/lose conditions
-- Simple and intuitive interface
+- 10 attempts per game
+- Responsive, modern UI with colorful feedback
+- Real-time hints: higher/lower after each guess
+- Win and lose states with clear messaging
+- "Play Again" button to quickly restart
+- Mobile-friendly design
 
-## How to Play
+## 🚀 How to Play
 
-1. The game generates a random number between 1 and 100
-2. Enter your guess in the input field
-3. Get feedback if your guess is too high or too low
-4. Try to find the correct number within 10 attempts
-5. Win by guessing the correct number, lose if you run out of attempts
+1. Open `index.html` in your web browser.
+2. Enter your guess (1-100) and click **Check!** or press Enter.
+3. The game will tell you if your guess is too high or too low.
+4. You have 10 attempts to guess the number.
+5. If you guess correctly, you win! If not, you'll see the answer and can play again.
 
-## Technologies Used
+## 🖥️ Screenshots
 
-- HTML
-- CSS
-- JavaScript
+> _Add screenshots of your game UI here for better presentation!_
 
-## Installation
+## 🛠️ Technologies Used
 
-1. Clone this repository
-2. Open `index.html` in your web browser
-3. Start playing!
+- HTML5
+- CSS3 (with modern gradients & responsive design)
+- JavaScript (DOM manipulation, game logic)
 
-## License
+## 📦 Installation & Usage
+
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/arpan7sarkar/Number-Guessing-game.git
+   cd Number-Guessing-game
+   ```
+2. **Open the game:**
+   - Simply launch `index.html` in your web browser.
+
+No build step or dependencies required!
+
+## 💡 Customization
+
+- To change the number range or attempts, edit the values in `script.js`.
+- Style and colors can be adjusted in `style.css`.
+
+## 📜 License
 
 MIT License
+
+---
+
+> _Enjoy guessing! Pull requests for improvements or new features are welcome._
